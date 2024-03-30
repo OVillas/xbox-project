@@ -1,0 +1,86 @@
+@import "../../../../assets/styles/variables";
+
+.navbar-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.routes {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item a {
+  color: $dark-40;
+  text-decoration: none;
+  padding: 8px 12px;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 50px;
+  margin-right: 30px;
+}
+
+.primary-button {
+  background-color: $brand-color;
+  color: $dark-10;
+  font-weight: bold;
+  width: 220px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10%;
+}
+
+.navbar-nav img {
+  margin-right: 10%;
+  width: 144px;
+}
+
+@media (max-width: 1060px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-nav img {
+    margin-right:0;
+    width: 144px;
+  }
+
+  .routes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .primary-button {
+
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 490px) {
+
+  .routes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 10%;
+  }
+
+  .routes li {
+    margin-top: 5px;
+  }
+
+}
