@@ -1,29 +1,64 @@
+@import "../../../../../assets/styles/variables.scss";
+
 .questions {
   max-width: 1280px;
   margin: 0 auto;
-  color: white;
+  color: $dark-40;
 }
 
 .questions .questions-area {
-  border-bottom: 2px solid #2E2E2E;
+  border-bottom: 2px solid #2e2e2e;
   margin-bottom: 45px;
   cursor: pointer;
 }
 
-.questions .questions-area .questions-title{
+.questions .questions-area .questions-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 35px;
 }
 
-.questions .questions-area .questions-title h4{
+.questions .questions-area .questions-title h4 {
   font-size: 24px;
 }
 
-.questions .questions-area p{
+.questions .questions-area p {
   font-size: 18px;
   margin-left: 20px;
   margin-bottom: 30px;
-  color: #C0C0C0;
+  color: #c0c0c0;
+}
+
+@media (max-width: 760px) {
+  .questions {
+    max-width: 1000px;
+    margin: 0 auto;
+    color: $dark-40;
+  }
+
+  .questions .questions-area {
+    border-bottom: 2px solid #2e2e2e;
+    margin-bottom: 45px;
+    cursor: pointer;
+  }
+
+  .questions .questions-area .questions-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+  }
+
+  .questions .questions-area .questions-title h4 {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+
+  .questions .questions-area p {
+    font-size: 18px;
+    margin-left: 18px;
+    margin-bottom: 30px;
+    color: #c0c0c0;
+  }
 }
