@@ -3,7 +3,7 @@
 .first-section {
   height: 56.25rem;
   color: $dark-40;
-  background-image: url('../../../assets/images/png/luz-verde.png');
+  background-image: url("../../../assets/images/png/luz-verde.png");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -34,11 +34,10 @@
 .first-section .overlay .videogame-img {
   flex: 1;
   text-align: center;
-  background-image: url('../../../assets/images/png/xbox.png');
+  background-image: url("../../../assets/images/png/xbox.png");
   background-position: center;
   background-repeat: no-repeat;
 }
-
 
 .second-section {
   max-width: 80rem;
@@ -75,6 +74,73 @@
   background-repeat: no-repeat;
 }
 
+.games {
+  max-width: 1920px;
+  margin: 300px auto 200px auto;
+  color: white;
+  display: flex;
+  flex: 1;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.games .games_banner {
+  flex: 1;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.games .game1 {
+  background-image: url('../../../assets/svg/group/group-1.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.games .game1 img {
+  width: 300px;
+  height: 61.67px;
+  margin-bottom: 64.33px;
+}
+
+.games .game2 {
+  background-image: url('../../../assets/svg/group/group-2.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+.games .game2 img {
+  width: 300px;
+  height: 83.71px;
+  margin-bottom: 64.33px;
+}
+
+.games .game3 {
+  background-image: url('../../../assets/svg/group/group-3.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.games .game3 img {
+  width: 200px;
+  height: 65.6px;
+  margin-bottom: 64.33px;
+}
+
+.games .game4 {
+  background-image: url('../../../assets/svg/group/group-4.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+.games .game4 img {
+  width: 300px;
+  height: 49.8px;
+  margin-bottom: 64.33px;
+}
 
 //Tablet
 @media (max-width: 1024px) {
@@ -107,8 +173,6 @@
     max-width: 45%;
   }
 }
-
-
 
 //Celular
 @media (max-width: 760px) {

@@ -26,6 +26,11 @@
   margin-right: 30px;
 }
 
+.nav-item a:hover {
+  background-color: $dark-20;
+  border-radius: 50px;
+}
+
 .primary-button {
   background-color: $brand-color;
   color: $dark-10;
