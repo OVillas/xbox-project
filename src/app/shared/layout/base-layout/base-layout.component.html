@@ -1,6 +1,8 @@
 <div class="min-h-screen flex surface-ground">
   <ng-content select="[navBar]"></ng-content>
   <div class="px-0 py-4 md:px-4 flex flex-column flex-auto">
-      <router-outlet></router-outlet>
+    <router-outlet></router-outlet>
   </div>
+  <ng-content select="[footer]"></ng-content>
+  <br><br>
 </div>

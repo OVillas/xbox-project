@@ -1,0 +1,22 @@
+<section class="questions">
+  <div
+    class="questions-area"
+    *ngFor="let item of questions"
+    (click)="toggleAccordion(item)"
+  >
+    <div class="questions-title">
+      <h4>{{ item.question }}</h4>
+      <img
+        *ngIf="!item.expanded"
+        src="assets/images/png/arrows/arrow-dark.png"
+        alt="seta de questão fechada"
+      />
+      <img
+        *ngIf="item.expanded"
+        src="assets/images/png/arrows/arrow.png"
+        alt="seta de questão aberta"
+      />
+    </div>
+    <p *ngIf="item.expanded">{{ item.answer }}</p>
+  </div>
+</section>

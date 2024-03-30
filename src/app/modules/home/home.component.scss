@@ -68,13 +68,7 @@
   line-height: 2.55rem;
 }
 
-.second-section .controler-img {
-  flex: 1;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.games {
+.third-section {
   max-width: 1920px;
   margin: 300px auto 200px auto;
   color: white;
@@ -84,7 +78,7 @@
   white-space: nowrap;
 }
 
-.games .games_banner {
+.third-section .games-banner {
   flex: 1;
   height: 800px;
   display: flex;
@@ -92,54 +86,70 @@
   align-items: flex-end;
 }
 
-.games .game1 {
-  background-image: url('../../../assets/svg/group/group-1.svg');
+.third-section .game-one {
+  background-image: url("../../../assets/svg/group/group-1.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.games .game1 img {
+.third-section .game-one img {
   width: 300px;
   height: 61.67px;
   margin-bottom: 64.33px;
 }
 
-.games .game2 {
-  background-image: url('../../../assets/svg/group/group-2.svg');
+.third-section .game-two {
+  background-image: url("../../../assets/svg/group/group-2.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto 100%;
 }
 
-.games .game2 img {
+.third-section .game-two img {
   width: 300px;
   height: 83.71px;
   margin-bottom: 64.33px;
 }
 
-.games .game3 {
-  background-image: url('../../../assets/svg/group/group-3.svg');
+.third-section .game-three {
+  background-image: url("../../../assets/svg/group/group-3.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.games .game3 img {
+.third-section .game-three img {
   width: 200px;
   height: 65.6px;
   margin-bottom: 64.33px;
 }
 
-.games .game4 {
-  background-image: url('../../../assets/svg/group/group-4.svg');
+.third-section .game-four {
+  background-image: url("../../../assets/svg/group/group-4.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto 100%;
 }
 
-.games .game4 img {
+.third-section .game-four img {
   width: 300px;
   height: 49.8px;
   margin-bottom: 64.33px;
+}
+
+.fourth-section {
+  max-width: 1280px;
+  margin: 0 auto;
+  color: $dark-40;
+}
+
+.fourth-section span {
+  color: $brand-color;
+}
+
+.fourth-section h3 {
+  font-size: 48px;
+  margin-bottom: 60px;
+  color: $dark-40;
 }
 
 //Tablet
@@ -160,7 +170,6 @@
     color: $dark-30;
     font-size: 24px;
     line-height: 2.55rem;
-    margin-right: 10%;
   }
 
   .second-section .controler-text {

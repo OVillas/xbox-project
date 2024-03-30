@@ -28,24 +28,20 @@
   />
 </section>
 
-<ng-container *ngIf="!isMobileView">
-  <section class="games">
-    <div class="games_banner game1">
-    </div>
+<ng-container *ngIf="!isMobileView; else mobileView">
+  <section class="third-section">
+    <div class="games-banner game-one"></div>
 
-    <div class="games_banner game2">
-    </div>
+    <div class="games-banner game-two"></div>
 
-    <div class="games_banner game3">
-    </div>
+    <div class="games-banner game-three"></div>
 
-    <div class="games_banner game4">
-    </div>
+    <div class="games-banner game-four"></div>
   </section>
 </ng-container>
 
-<ng-container *ngIf="isMobileView">
-  <section class="third-section">
+<ng-template #mobileView>
+  <section>
     <p-galleria
       [value]="images"
       [numVisible]="5"
@@ -59,4 +55,10 @@
       </ng-template>
     </p-galleria>
   </section>
-</ng-container>
+</ng-template>
+
+<section class="fourth-section">
+  <h3><span>Perguntas</span> frequentes</h3>
+  <app-question [questions]="questions"></app-question>
+</section>
+
